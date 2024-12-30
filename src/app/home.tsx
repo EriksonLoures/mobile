@@ -50,7 +50,7 @@ export default function Home(){
         fetchMarkets()
     },[category])
 
-    return <View style={ {flex: 1}}>
+    return <View style={ {flex: 1, backgroundColor: "#CECECE"}}>
         <Categories data={categories} onSelected={setCategory} selected={category}/>
 
         <Places data={markets}/>
